@@ -3,194 +3,750 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gamezone</title>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
 </head>
 <body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <header>
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo/logo.png" alt="logo"/>
+            </a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fa fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new.html">New & Noteworthy</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="#" class="sign" id="sign">Sign In</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
       </nav>
+    </header>
 
-      <!-- Banner Section -->
+    <main>
+      <!-- banner -->
       <section class="banner">
-        <h1>Your Pet is Part of Our Family</h1>
-        <p>Let us treat your pet like our own family with best services.</p>
+        <div class="banner-title">
+          <h1>What you would like to play?</h1>
+          <p>An online game store aims to make it easy for gamers.</p>
+          <p>Is always up to date in the world of gaming.</p>
+        </div>
+        <div class="search">
+          <form
+            action="https://www.google.com/search"
+            method="get"
+            class="search-bar"
+          >
+            <input
+              type="text"
+              name="search"
+              placeholder="Search your game"
+            /><button class="search-btn" type="submit">Search</button>
+          </form>
+        </div>
+
+        <!-- banner slider -->
+        <div class="slider">
+          <div class="slide-container swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <!--slider1-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/top/1.jpg"
+                        ><img
+                          src="images/top_saler/farthest.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Farthest Frontier</a></h2>
+                    <div class="description">
+                      <div class="categories">
+                        <p><a href="#">Action</a></p>
+                        <div class="system">
+                          <img src="images/system/windows.png" alt="windows" />
+                        </div>
+                      </div>
+
+                      <p>
+                        Protect and guide your people as you forge a town from
+                        untamed wilderness at the edge of the known world.
+                        Harvest raw materials, hunt, fish and farm to survive.
+                        Produce...
+                      </p>
+                    </div>
+                    <div class="price">
+                      <p>$26.00</p>
+                      <button class="button">Pre-Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!--slider2-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/top/2.jpg"
+                        ><img
+                          src="images/top_saler/soulhackers2.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Soul Hackers 2</a></h2>
+
+                    <div class="description">
+                      <div class="categories">
+                        <p><a href="#">RPG</a></p>
+                        <div class="system">
+                          <img src="images/system/windows.png" alt="windows" />
+                          <img src="images/system/linux.png" alt="linux" />
+                        </div>
+                      </div>
+
+                      <p>
+                        Explore a supernatural RPG with stylish summoners and
+                        dark dangers lurking under the neon lights of a
+                        cyberpunk Japan. It is up to Ringo, an agent of Aion, to
+                        save...
+                      </p>
+                    </div>
+                    <div class="price">
+                      <p>$79.90</p>
+                      <button class="button">Pre-Order Now</button>
+                    </div>
+                  </div>
+                </div>
+                <!--slider3-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/top/3.jpg"
+                        ><img
+                          src="images/top_saler/cultofthelamb.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Cult of the lamb</a></h2>
+
+                    <div class="description">
+                      <div class="categories">
+                        <p><a href="#">Action</a></p>
+                        <div class="system">
+                          <img src="images/system/apple.png" alt="apple" />
+                          <img src="images/system/windows.png" alt="windows" />
+                        </div>
+                      </div>
+
+                      <p>
+                        Start your own cult in a land of false prophets,
+                        venturing out into diverse and mysterious regions to
+                        build a loyal community of woodland Followers and spread
+                        your...
+                      </p>
+                    </div>
+                    <div class="price">
+                      <p>$26.00</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!--slider4-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/top/4.jpg"
+                        ><img
+                          src="images/top_saler/regiments.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Regiments</a>R</h2>
+
+                    <div class="description">
+                      <div class="categories">
+                        <p><a href="#">Indie</a></p>
+                        <div class="system">
+                          <img src="images/system/windows.png" alt="windows" />
+                          <img src="images/system/linux.png" alt="linux" />
+                        </div>
+                      </div>
+
+                      <p>
+                        Regiments is a Real-Time Tactics game set in Germany
+                        1989. The Cold War has gone hot, and the inferno is
+                        raging. Lead your Regiment through the fires of conflict
+                        and...
+                      </p>
+                    </div>
+                    <div class="price">
+                      <p>$26.00</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!--slider5-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/top/5.jpg"
+                        ><img
+                          src="images/top_saler/plateup.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">PlateUp!</a></h2>
+
+                    <div class="description">
+                      <div class="categories">
+                        <p><a href="#">Action</a></p>
+                        <div class="system">
+                          <img src="images/system/apple.png" alt="apple" />
+                          <img src="images/system/windows.png" alt="windows" />
+                        </div>
+                      </div>
+
+                      <p>
+                        Cook and serve your dishes, design and decorate your
+                        restaurants, and expand your culinary kingdom with new
+                        unlocks, abilities and dishes in procedurally-generated
+                        locations.
+                      </p>
+                    </div>
+                    <div class="price">
+                      <p>$17.00</p>
+                      <button class="button">Pre-Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- offer section -->
+      <section class="offer">
+        <div class="offer-title">
+          <h2>Special Offer</h2>
+          <p>Browse discounted products for this month!</p>
+        </div>
+
+        <!--countdown-->
+        <div class="countdown-timer">
+          <div class="timer-item">
+            <div class="days">
+              <h3>00</h3>
+              <span>Days</span>
+            </div>
+          </div>
+          <div class="timer-item">
+            <div class="hours">
+              <h3>00</h3>
+              <span>Hours</span>
+            </div>
+          </div>
+          <div class="timer-item">
+            <div class="minutes">
+              <h3>00</h3>
+              <span>Minutes</span>
+            </div>
+          </div>
+          <div class="timer-item">
+            <div class="seconds">
+              <h3>00</h3>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- offer slider -->
+        <div class="offer-slider">
+          <div class="slide-container swiper">
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <!--card1-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/offer/rosewater.jpg"
+                        ><img
+                          src="images/offer/rosewater.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">
+                      <a href="#">Rosewater</a>
+                    </h2>
+
+                    <div class="price">
+                      <p class="offer-p"><a>$79.00</a> $34.00</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- offer card 2 -->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/offer/theawakened.jpg"
+                        ><img
+                          src="images/offer/theawakened.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Sherlock Holmes</a></h2>
+
+                    <div class="price">
+                      <p class="offer-p"><a>$59.90</a> $29.90</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!--card3-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/offer/crimes.jpg"
+                        ><img
+                          src="images/offer/crimes.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name"><a href="#">Crimes and Punishments</a></h2>
+
+                    <div class="price">
+                      <p class="offer-p"><a>$39.90</a> $7.90</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!--card4-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/offer/deadisland.jpg"
+                        ><img
+                          src="images/offer/deadisland.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">
+                      <a href="#">Dead Island Definitive Edition</a>
+                    </h2>
+
+                    <div class="price">
+                      <p class="offer-p"><a>$20.00</a> $4.00</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!--card5-->
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                      <a href="images/offer/warhammer.jpg"
+                        ><img
+                          src="images/offer/warhammer.jpg"
+                          alt="game"
+                          class="card-img"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <h2 class="name">
+                      <a href="#">Total War: WARHAMMER III</a>
+                    </h2>
+
+                    <div class="price">
+                      <p class="offer-p"><a>$69.00</a> $62.10</p>
+                      <button class="button">Add to Card</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-navBtn swiper-button-next"></div>
+              <div class="swiper-navBtn swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more">
+          <a href="#">More Offer</a>
+        </div>
       </section>
 
-      <!-- Our Services section-->
-      <section class="services">
-        <div>
-            <h2>Our Services</h2>
-            <p>We look after your pets with our best staffs</p>
+      <!-- free section -->
+      <section class="free">
+        <div class="free-title">
+          <h2>Free to Play</h2>
+          <p>The most played free to play titles!</p>
         </div>
+        <div class="free-r">
+          <div class="free-row">
+            <!-- free col1 -->
+            <div class="free-col">
+              <a href="images/free_games/brawlhalla.jpg"
+                ><img src="images/free_games/brawlhalla.jpg" alt="game"
+              /></a>
+              <h3 class="name"><a href="#">Brawlhalla</a></h3>
+              <div class="categories">
+                <p><a href="#">Action</a></p>
+                <div class="system">
+                  <img src="images/system/apple.png" alt="apple" />
+                  <img src="images/system/windows.png" alt="windows" />
+                </div>
+              </div>
+              <p class="space">
+                An epic platform fighter for up to 8 players online or local.
+                Try casual free-for-alls, ranked matches, or invite friends to a
+                private room. And it's free! Play cross-platform with millions
+                of players...
+              </p>
+              <a href="#" class="action-btn">Play for Free</a>
+            </div>
+            <!-- free col2 -->
+            <div class="free-col">
+              <a href="images/free_games/mergecrafter.jpg"
+                ><img src="images/free_games/mergecrafter.jpg" alt="game"
+              /></a>
+              <h3 class="name"><a href="#">MergeCrafter</a></h3>
+              <div class="categories">
+                <p><a href="#">Strategy</a></p>
+                <div class="system">
+                  <img src="images/system/windows.png" alt="windows" />
+                  <img src="images/system/apple.png" alt="apple" />
+                </div>
+              </div>
+              <p class="space">
+                Welcome to the magical world of Runaria! Explore dungeons, chop
+                trees, mine rocks, and discover hidden treasure! Merge identical
+                items to create valuable resources, Craft new tools and upgrade
+                them...
+              </p>
+              <a href="#" class="action-btn">Play for Free</a>
+            </div>
+          </div>
+          <div class="free-row">
+            <!-- free col3 -->
+            <div class="free-col">
+              <a href="images/free_games/hamster.jpg"
+                ><img src="images/free_games/hamster.jpg" alt="game"
+              /></a>
 
-        <div class="content">
-            <h3>Healthcare</h3>
-            <a href="#" class="button">See more</a>
+              <h3 class="name"><a href="#">Hamster Playground</a></h3>
+              <div class="categories">
+                <p><a href="#">Racing</a></p>
+                <div class="system">
+                  <img src="images/system/windows.png" alt="windows" />
+                  <img src="images/system/apple.png" alt="apple" />
+                </div>
+              </div>
+              <p class="space">
+                Prepare for cuteness overload, relentless training, and fierce
+                rivalry as you and your hamsters take on challenges while
+                traversing the maze and riding a skateboard, with more modes
+                coming...
+              </p>
+              <a href="#" class="action-btn">Play for Free</a>
+            </div>
+            <!-- free col4 -->
+            <div class="free-col">
+              <a href="images/free_games/onebit.jpg"
+                ><img src="images/free_games/onebit.jpg" alt="game"
+              /></a>
+              <h3 class="name"><a href="#">OneBit Adventure</a></h3>
+              <div class="categories">
+                <p><a href="#">Adventure</a></p>
+                <div class="system">
+                  <img src="images/system/windows.png" alt="windows" />
+                  <img src="images/system/apple.png" alt="apple" />
+                </div>
+              </div>
+              <p class="space">
+                OneBit Adventure is a casual turn-based roguelike where you
+                adventure as far as possible to level up and battle against
+                rogue monsters. Your primary goal in OneBit Adventure is to
+                survive...
+              </p>
+              <a href="#" class="action-btn">Play for Free</a>
+            </div>
+          </div>
         </div>
-        <div class="content">
-            <h3>Medical Treatment</h3>
-            <a href="#" class="button">See more</a>
+        <div class="more">
+          <a href="#">More Free to play</a>
         </div>
-        <div class="content">
-            <h3>Vaccination</h3>
-            <a href="#" class="button">See more</a>
-        </div>
-        <div class="content">
-            <h3>Balanced nutrition</h3>
-            <a href="#" class="button">See more</a>
-        </div>
-        <div class="content">
-            <h3>Grooming</h3>
-            <a href="#" class="button">See more</a>
-        </div>
-        <div class="content">
-            <h3>Training</h3>
-            <a href="#" class="button">See more</a>
-        </div>
-
       </section>
 
-      <!-- 24h Consultation section -->
-      <section class="consultation">
-        <div>
-            <h2>24h Consulation</h2>
-            <p>No matter where or when, we are ready for consultation</p>
-            <p>At SG Petcare, the health of your furry friends will always 
-                be our top priority. As pet owners ourselves, we’re a team 
-                of vets in Singapore that completely understand the light 
-                and joy that our companions bring into our lives. All we 
-                want is the best for our pets to be happy, healthy and 
-                loved. 
-            </p>
-            <a href="#">Read more</a>
-        </div>
-        <div>
-            <!-- image -->
+      <!-- upcoming -->
+      <section class="upcoming">
+        <div class="upcoming-title">
+          <h2>Upcoming Games</h2>
+          <a href="images/upcoming_games/ofk.jpg"
+            ><img src="images/upcoming_games/ofk.jpg" alt="ofk"
+          /></a>
         </div>
 
-      </section>
-
-      <!-- Our product section-->
-      <section class="product">
-        <div>
-            <h2>Our product</h2>
-            <p>Reliable healthy food for your pet</p>
-        </div>
-
-        <div class="content">
-            <h3>Food Clusters Grain-free Turkey (2.27kg)</h3>
-        </div>
-        <div class="content">
-            <h3>Grain-free Chicken & Whitefish (1.71kg)</h3>
-        </div>
-        <div class="content">
-            <h3>Higgins Vitaseed California Blend (2.27kg)</h3>
-        </div>
-        <div class="content">
-            <h3>Food Clusters Grain-free Beef (2.27kg)</h3>
-        </div>
-      </section>
-
-      <!-- our customer feedback section-->
-      <section class="customer">
-        <div>
-            <h2>Our Customers</h2>
-            <p>What people said about us</p>
-        </div>
-
-        <div class="content">
-            <h3>Great services</h3>
+        <div class="ofk">
+          <div class="ofk-img">
+            <a href="images/upcoming_games/weareofk.jpeg"
+              ><img src="images/upcoming_games/weareofk.jpeg" alt="we are ofk"
+            /></a>
+          </div>
+          <div class="ofk-content">
+            <h3 class="name"><a href="#">We are OFK</a></h3>
+            <div class="categories">
+              <p><a href="#">Adventure</a></p>
+              <div class="system">
+                <img src="images/system/windows.png" alt="windows" />
+              </div>
+            </div>
             <p>
-                Always reliable, Personal services, loves my cat! I 
-                never worry about my cat when they are looking after 
-                her.
+              From indie pop band OFK: the Music Biopic series and Interactive
+              E.P. about four friends dreaming, dating, and paying rent in Los
+              Angeles. A story of the creative process, and the things that get
+              in the way.
             </p>
-            <p>Monalisa</p>
+            <p class="space">Release date: 25 August, 2022.</p>
+            <a href="#" class="action-btn">Find Out More</a>
+          </div>
         </div>
-        <div class="content">
-            <h3>Never Disappointed</h3>
-            <p>
-                The services are super convenient and allow me to feel 
-                confident that my dog is getting attention while I am 
-                far from home.
+        <!-- upcoming games -->
+        <div class="upcoming-row">
+          <!-- upcoming col1 -->
+          <div class="upcoming-col">
+            <a href="images/upcoming_games/silksong.jpeg"
+              ><img src="images/upcoming_games/silksong.jpeg" alt="game"
+            /></a>
+            <h2 class="name"><a href="#">Hollow Knight: Silksong</a></h2>
+            <div class="categories">
+              <p><a href="#">Action</a></p>
+              <div class="system">
+                <img src="images/system/windows.png" alt="windows" />
+                <img src="images/system/linux.png" alt="linux" />
+              </div>
+            </div>
+            <p class="space">
+              Discover a vast, haunted kingdom in Hollow Knight: Silksong! The
+              sequel to the award winning action-adventure. Explore, fight and
+              survive as you ascend to the peak of a land ruled by silk and
+              song...
             </p>
-            <p>Vivian Heng</p>
-        </div>
-        <div class="content">
-            <h3>Great services</h3>
-            <p>
-                I have used their services several times and they have 
-                been great to my cat. I also like that they are willing 
-                to accommodate last minute requests.
+            <a href="#" class="action-btn">Find Out More</a>
+          </div>
+          <!-- upcoming col2 -->
+          <div class="upcoming-col">
+            <a href="images/upcoming_games/partyanimals.jpeg"
+              ><img src="images/upcoming_games/partyanimals.jpeg" alt="game"
+            /></a>
+
+            <h2 class="name"><a href="#">Party Animals</a></h2>
+            <div class="categories">
+              <p><a href="#">Action</a></p>
+              <div class="system">
+                <img src="images/system/apple.png" alt="apple" />
+                <img src="images/system/linux.png" alt="linux" />
+              </div>
+            </div>
+            <p class="space">
+              Fight your friends as puppies, kittens and other fuzzy creatures
+              in PARTY ANIMALS! Paw it out with your friends both online and
+              offline. Interact with the world under our realistic physics
+              engine...
             </p>
-            <p>Mark Lee</p>
+            <a href="#" class="action-btn">Find Out More</a>
+          </div>
+          <!-- upcoming col3 -->
+          <div class="upcoming-col">
+            <a href="images/upcoming_games/exocolonist.jpeg"
+              ><img src="images/upcoming_games/exocolonist.jpeg" alt="game"
+            /></a>
+
+            <h2 class="name"><a href="#">I Was a Teenage Exocolonist</a></h2>
+            <div class="categories">
+              <p><a href="#">RPG</a></p>
+              <div class="system">
+                <img src="images/system/windows.png" alt="windows" />
+                <img src="images/system/linux.png" alt="linux" />
+              </div>
+            </div>
+            <p class="space">
+              Spend your teenage years on an alien planet in this narrative RPG
+              with card-based battles. Explore, grow up, and fall in love. The
+              choices you make and skills you master over ten years will
+              determine...
+            </p>
+            <a href="#" class="action-btn">Find Out More</a>
+          </div>
         </div>
       </section>
 
       <!-- join us section -->
-      <section class="joinus">
-        <h2>Join Our Mailing List</h2>
-        <p>Sign up to get updates, news and tips in your inbox</p>
-        <form action="">
-            <input type="email" id="email" name="email" placeholder="Email">
-            <input class="singup-btn" type="submit" value="Sign Up">
-        </form>
+      <section class="join">
+        <h2>Looking for Recommendation?</h2>
+        <p class="space">Sign in to view personalized recommendation</p>
+        <a href="#" class="action-btn">Sign In</a>
+        <p class="space-top">
+          or <a href="#" class="link">Sign Up</a> and join us for free
+        </p>
       </section>
-
-
-      <!-- Footer -->
-      <footer>
-        <div>
-            <!-- logo img-->
-            <p>
-                SG Petcare has loving pet carers across Singapore who offer 
-                all kinds of pet care services for pet owner to keep their 
-                pets happpy and healthy
-            </p>
-        </div>
-
-        <div class="footer-menu">
-            <h4>Services</h4>
-            <p><a href="#">Medi Care</a></p>
-            <p><a href="#">Pet Care</a></p>
-            <p><a href="#">Grooming</a></p>
-            <p><a href="#">Training</a></p>
-            <p><a href="#">Boarding</a></p>
-        </div>
-        <div class="footer-menu">
-            <h4>About</h4>
-            <p><a href="#">About Us</a></p>
-            <p><a href="#">Features</a></p>
-            <p><a href="#">Community</a></p>
-            <p><a href="#">Careers</a></p>
-            <p><a href="#">Blog</a></p>
-        </div>
-        <div class="footer-menu">
-            <h4>FAQ</h4>
-            <p><a href="#">Account</a></p>
-            <p><a href="#">Deliveries</a></p>
-            <p><a href="#">Orders</a></p>
-            <p><a href="#">Payment</a></p>
-            <p><a href="#">Pet Training</a></p>
-        </div>
-
-        <div class="copyright">
-            <p>Copyright © 2023, SG Petcare. All rights reserved</p>
-            <div class="policy">
-              <p><a href="#">Term of us</a></p>
-              <p><a href="#">Privacy policy</a></p>
-              <p><a href="#">Cookie policy</a></p>
-            </div>
+    </main>
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col footer-logo">
+          <div class="footer-l">
+            <a href="index.html"
+              ><img src="images/logo/footer_logo.png" alt="logo"
+            /></a>
           </div>
-      </footer>
-</body>
+
+          <p>
+            An online game store aims to make it wasy for gamers. Is always up
+            to date in the world of gaming.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col footer-nav">
+          <div class="footer-navbar">
+            <h4>Company</h4>
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Work With Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Game Categories</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Role-Playing</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Sports & Racing</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Help & Support</h4>
+            <nav>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022, Gamezone. All rights reserved</p>
+        <div class="policy">
+          <p><a href="#">Term of us</a></p>
+          <p><a href="#">Privacy policy</a></p>
+          <p><a href="#">Cookie policy</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

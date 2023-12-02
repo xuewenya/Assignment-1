@@ -1,3 +1,699 @@
-body{
-    color:blueviolet;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+}
+  
+body.disabled {
+    overflow: hidden;
+}
+  
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 28px;
+}
+  
+h3 {
+    font-size: 20px;
+}
+  
+p {
+    font-size: 16px;
+    color: #707070;
+}
+
+.logo{
+    width: 70px;
+}
+
+/* Mobile view */
+
+/* Navbar */
+/*.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}*/
+
+
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list li{
+    list-style: none; /* remove list dot*/
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500; /* change font weight */
+    text-decoration: none; /* remove underline*/
+    transition: all 0.3s ease;  /* hover transition for 0.3s */
+}
+
+.menu-list li a:hover{
+    color: #e77166; 
+}
+
+/* style icon button for burger menu and cancle btn */
+.icon{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer; /* change the mouse cursor when hovering over an element */
+}
+
+.icon:hover {
+    color: #e77166;
+}
+
+/* position cancel icon absolute and set the top and right */
+.menu-list .cancel-btn{
+    position: absolute;
+    right: 35px;
+    top: 25px;
+}
+
+/* hide the icons wait for javascript to style */
+.icon {
+    display: none;
+}
+
+.navbar .menu-list{
+    position: fixed;
+    transform: translateX(100%);
+    top: 0;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* background color with 50% transparent */
+    backdrop-filter: blur(5px); /* set background color to blur */
+    transition: all 0.3s ease; /* Set transition time */
+    inset: 0 0 0 30%; /* set the space that burger menu takes */
+    padding-top: 100px; 
+}
+
+/* show the menu */
+.navbar.show .menu-list{
+    transform: translateX(0%);
+}
+
+.navbar .menu-list li {
+    margin-top: 35px;
+    padding: 5px;
+}
+
+.sign{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.sign:hover{
+    border: 1px solid #e77166;
+}
+
+/* index page banner */
+.banner {
+    padding: 0 20px;
+    background: url("../images/banner/banner.jpg") no-repeat; /* Add background image with no repeat*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* fix the background image */
+    padding-top: 150px;
+    color: #fff;
+}
+
+.banner p {
+    color: #fff;
+    text-align: center;
+}
+
+.search{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style the search input */
+.search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* style the search btn */
+.search-btn{
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #e77166;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn:hover{
+    background-color: #333333;
+    transition: all 0.3s ease;
+}
+
+/* style the search bar */
+.search-bar{
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* banner slider */
+.slider {
+    padding: 60px 0;
+}
+
+.slider-container {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slider-content {
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+/* style game card box*/
+.card {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+    margin: 20px 0;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 10px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px 25px 0 25px;
+}
+
+/* style card image */
+.card-image{
+    position: relative;
+    padding: 3px;
+}
+
+.card-image img{
+    border-radius: 25px 25px 0 0;
+    padding: 0 10px;
+}
+
+/* games name */
+.name a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.name a:hover{
+    color:#e77166;
+}
+
+/* categories of the games*/
+.categories{
+    padding:  5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #707070;
+}
+
+.categories p a:hover{
+    color: #e77166;
+}
+
+/* Game description text */
+.card-content .description p{
+    font-size: 14px;
+    color: #707070;
+}
+
+/* suport system icon */
+.system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.system img{
+    width: 18px;
+    padding: 0 1px;
+}
+
+/* style the price of the top saler*/
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #707070;
+    margin-top: 20px;
+}
+
+.price p{
+    color: #333;
+    font-weight: 600;
+}
+
+/* style pre-order btn */
+.button{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 14px;
+    cursor: pointer;
+    background-color: #e77166;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* style offer section */
+.offer {
+    padding: 40px 0;
+    background-color: #f6f6ff;
+}
+
+.offer-title {
+    text-align: center;
+}
+
+/* Offer countdown */
+.countdown-timer{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.timer-item {
+    display: inline-block;
+    background-color: #e77166;
+    margin: 5px 3px;
+    width: 100px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.timer-item span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* style the offer price */
+.price .offer-p{
+    color: #e77166;
+}
+
+.price a{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through; /* cross off the old price */
+}
+
+/* more offer button style */
+.more{
+    text-align: center;
+}
+
+.more a {
+    color: #e77166;
+    text-decoration: none;
+    border-bottom: 2px solid #e77166;
+    padding: 2px 5px;
+    font-weight: 600;
+    transition: all 0.3 ease;
+}
+
+.more a:hover{
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.offer-slider {
+    padding-top: 20px 0 40px 0;
+}
+
+/* index page free games section */
+.free {
+    background-image: url(../images/banner/section.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.free-title,
+.upcoming-title {
+    text-align: center;
+}
+
+.free p{
+    font-size: 14px;
+}
+
+.free-row,
+.upcoming-row {
+    margin: 0 30px;
+}
+
+.free-col,
+.upcoming-col {
+    padding: 15px 15px 25px 15px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 30px 0;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+}
+
+.free-col h3,
+.upcoming-col h3 {
+    padding-top: 15px;
+}
+
+.free-col img,
+.upcoming-col img {
+    border-radius: 15px 15px 0 0;
+}
+
+.space {
+    padding-bottom: 20px;
+}
+
+/* style all the action btn - play for free, find out more and sign in */
+.action-btn {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #e77166;
+    color: #fff;
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #333;
+}
+
+/* upcoming section */
+.upcoming {
+    padding: 40px 20px;
+    background-color: #f6f6ff;
+}
+
+/* align ofk game */
+.ofk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* remove this section from mobile view */
+.ofk-img{
+    display: none;
+}
+
+.ofk-img,
+.ofk-content {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.upcoming p {
+    font-size: 14px;
+}
+
+/* border a line to split games */
+.upcoming-row {
+    margin-top: 20px;
+    border-top: 1px solid #707070;
+}
+
+.upcoming-col h2 {
+    padding-top: 10px;
+}
+
+/* Join us section */
+.join {
+    background-image: url(../images/join_us/home_join.png);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.join p {
+    color: #fff;
+    padding-top: 5px;
+}
+
+.join .link {
+    text-decoration: none;
+    color: #e77166;
+    transition: all 0.3 ease;
+}
+
+.join .link:hover{
+    color:#333
+}
+
+/* footer */
+footer{
+    background-image: url(../images/footer/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 40px 30px;
+}
+
+footer p {
+    color: #fff;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+footer .social a i {
+    font-size: 40px;
+    padding: 20px 20px 0 20px;
+}
+
+.footer-col {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-nav ul li {
+    list-style-type: none;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-col a:hover{
+    color: #333;
+}
+
+/* footer copyright */
+.copyright {
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.policy {
+    display: flex;
+    justify-content: center;
+}
+
+.policy p a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.policy p a:hover {
+    color: #333;
+}
+
+/* support page */
+/* support page banner */
+.suport-banner {
+    padding-bottom: 100px;
+}
+
+/* Tablet view */
+@media screen and (min-width: 688px) {
+    /* header nav */
+    .icon {
+        display: none;
+    }
+
+    .search-bar {
+        max-width: 600px;
+    }
+
+    .free-row {
+        display: flex;
+    }
+
+    .free-col {
+        flex: 1;
+        margin: 20px;
+    }
+
+    .ofk {
+        padding: 50px 0;
+    }
+
+    .game-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+}
+
+/* destop view */
+@media screen and (min-width: 992px) {
+    /* reset the font size */
+    .h1 {
+        font-size: 45px;
+    }
+
+    .h2 {
+        font-size: 34px;
+    }
+
+    .banner {
+        padding-top: 200px;
+    }
+
+    .offer-title h2,
+    .free-title h2,
+    .upcoming-title h2,
+    .join h2 {
+        padding: 40px 0 20px 0; 
+    }
+
+    /* upcoming section */
+    .upcoming-row {
+        display: flex;
+    }
+
+    .upcoming-col {
+        flex: 1;
+        margin: 20px;
+    }
+
+    .free-r {
+        display: flex;
+    }
+
+    .free-row {
+        margin: 0;
+    }
+
+    .ofk-img {
+        display: block;
+    }
+
+    /* footer section */
+    .footer-row{
+        display: flex;
+    }
+
+    .footer-logo {
+        width: 25%;
+    }
+
+    .footer-nav {
+        width: 75%;
+        justify-content: space-around;
+    }
+    
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copyright p {
+        padding-top: 20px;
+    }
+
 }
