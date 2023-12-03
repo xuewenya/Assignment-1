@@ -1,23 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
+/* apply styles to all images */  
 img {
     width: 100%;
     display: block;
 }
 
+/* body styles */
 body {
     color: #333333;
     font-family: "Poppins", sans-serif;
 }
-  
+
+/* Disable body overflow on certain conditions */
 body.disabled {
     overflow: hidden;
 }
-  
+
+/* heading styles */ 
 h1 {
     font-size: 32px;
     font-weight: 600;
@@ -32,17 +30,19 @@ h2 {
 h3 {
     font-size: 20px;
 }
-  
+
+/* paragraph styles */  
 p {
     font-size: 16px;
     color: #707070;
 }
 
+/* logo width */
 .logo{
     width: 70px;
 }
 
-/* Mobile view */
+/* Mobile view  styles*/
 
 /* Navbar */
 .navbar{
@@ -53,16 +53,19 @@ p {
     transition: all 0.3s ease;
 }
 
+/* sticky navbar */
 .navbar.sticky{
     background-color: #333;
 }
 
+/* Navbar content styles */
 .navbar .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Menu list styles */
 .menu-list li{
     list-style: none; /* remove list dot*/
 }
@@ -75,6 +78,7 @@ p {
     transition: all 0.3s ease;  /* hover transition for 0.3s */
 }
 
+/* Hover effect on menu list items */
 .menu-list li a:hover{
     color: #e77166; 
 }
@@ -102,7 +106,7 @@ p {
     top: 25px;
 }
 
-
+/* navbar menu list styles */
 .navbar .menu-list{
     position: fixed;
     transform: translateX(100%);
@@ -203,7 +207,7 @@ p {
 
   .swiper-wrapper {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* apply transition effetc with 0.3 seconds to complete, and uses ease-in-out timing function for a gradual start and end.*/
   }
 
   .swiper-slide {
@@ -217,7 +221,7 @@ p {
     justify-content: center;
     text-align: center;
     border-radius: 25px;
-    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.50); /* no horizontal or vertical offset, blur radius of 16px, and a spread of -4px. It uses a semi-transparent black color (rgba(0, 0, 0, 0.50)). */
     cursor: grab;
   }
 
@@ -256,7 +260,7 @@ p {
   .swiper-button-next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Translate the element vertically upward by 50% of its own height. */
     background-color: #e77166;
     color: #fff;
     border: none;
