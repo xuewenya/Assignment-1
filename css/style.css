@@ -599,6 +599,10 @@ footer .social a i {
     justify-content: space-between;
 }
 
+.footer-nav h4{
+    margin-bottom: 10px;
+}
+
 .footer-nav ul li {
     list-style-type: none;
 }
