@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamezone</title>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo/logo.png" alt="logo"/>
+            </a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fa fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new.html">New & Noteworthy</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="#" class="sign">Sign In</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- new page banner -->
+      <section class="new-banner">
+        <div class="new-container">
+          <h1>Party Animals</h1>
+          <p class="new-text">
+            Fight your friends as puppies, kittens and other fuzzy creatures in
+            PARTY ANIMALS! Paw it out with your friends both online and offline.
+            Interact with the world under our realistic physics engine. Did I
+            mention PUPPIES?
+          </p>
+          <p class="new-text">Release on: 23 December, 2023</p>
+          <a href="#">Find out more</a>
+        </div>
+      </section>
+
+      <!-- new page banner slide section -->
+      <section class="new-banner-slide">
+
+        <!-- Swiper with Bullet Pagination -->
+        <div class="swiper-container" id="swiperWithBullet">
+            <div class="swiper-wrapper">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <a href="images/banner/new_banner1.jpg">
+                                <img src="images/banner/new_banner1.jpg" alt="game" class="card-img"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner2.jpg">
+                                    <img src="images/banner/new_banner2.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner3.jpg">
+                                    <img src="images/banner/new_banner3.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner4.jpg">
+                                    <img src="images/banner/new_banner4.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="filter-menu">
+        <div class="fmenu-container">
+          <h2>Upcoming Games</h2>
+
+          <div class="fmenu-btns">
+            <button type="button" class="fmenu-btn active-btn" id="all">
+              All
+            </button>
+            <button type="button" class="fmenu-btn" id="popular">
+              Popular
+            </button>
+          </div>
+
+          <div class="game-items">
+            <!-- item1 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/killrun.jpg"
+                    ><img src="images/new_games/killrun.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Killrun</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Run n' gun parkour speedrunner. Race to set the best times
+                    and create the fastest routes. Smash the pro times on every
+                    level and unlock new weapon packs as you progress through a
+                    prototype...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 25 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item2 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/soulhackers2.jpg"
+                    ><img src="images/new_games/soulhackers2.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Soul Hackers 2</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">RPG</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Explore a supernatural RPG with stylish summoners and dark
+                    dangers lurking under the neon lights of a cyberpunk Japan.
+                    It is up to Ringo, an agent of Aion, to save the world from
+                    apocalypse.
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 20 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item3 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/overloop.jpg"
+                    ><img src="images/new_games/overloop.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Overloop</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/apple.png" alt="apple" />
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    A puzzle-platformer set in a dystopian world where the
+                    invention of a cloning device has messed things up, big
+                    time. Armed with a clone gun and a mighty fine mustache, the
+                    chore of...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 30 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item4 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/brok.jpg"
+                    ><img src="images/new_games/brok.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">BROK the InvestiGator</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">RPG</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    The very first PUNCH & CLICK! Brok is an innovative
+                    adventure mixed with beat 'em up and RPG elements. In a grim
+                    world where animals have replaced mankind, what kind of
+                    detective will you be?
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 12 February 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item5 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/whos.jpg"
+                    ><img src="images/new_games/whos.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Who's Who?</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/apple.png" alt="apple" />
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Enjoy an intense game of wits with friends all around the
+                    world! Experience a sense of thrill and achievement by
+                    becoming the last survivor. Play different modes including
+                    "Police...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 28 February 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item6 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/onearmedcook.jpg"
+                    ><img src="images/new_games/onearmedcook.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">One-armed cook</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Casual</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    One-armed cook is a chaotic co-op cooking game for up to 4
+                    people. Work as a team or cook on your own, set your own
+                    pace, and don't let the stress of a full restaurant catch up
+                    to you. The...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 30 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item7 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/tinykin.jpg"
+                    ><img src="images/new_games/tinykin.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="">Tinykin</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/apple.png" alt="apple" />
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Catch hundreds of tinykin and use their unique powers to
+                    bring Milo back to his home planet and back to normal
+                    size!Catch hundreds of tinykin and use their unique powers
+                    to bring Milo back.
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 31 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item8 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/immortality.jpg"
+                    ><img src="images/new_games/immortality.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">IMMORTALITY</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Indie</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Marissa Marcel was a film star. She made three movies. But
+                    none of the movies were ever released. And Marissa Marcel
+                    disappeared. An interactive trilogy from Sam Barlow, creator
+                    of...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 31 January 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item9 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/fishinggame.jpg"
+                    ><img src="images/new_games/fishinggame.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Fishing Game</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a>Casual</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Fishing game is an itty bitty game inspired by the fishing
+                    minigame in Stardew Valley. Filled with a bunch of goofy
+                    writing and a handful of spicy gimmicks. Collect over twenty
+                    unique...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 25 December 2023</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item10 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/misc.jpg"
+                    ><img src="images/new_games/misc.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Misc. A Tiny Tale</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Indie</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Join Buddy and Bag Boy, two adorable robots made of
+                    miscellaneous items, on a heartfelt 3D platforming
+                    adventure. Explore a familiar world from a new perspective,
+                    lend...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 20 December 2023</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item11 -->
+            <div class="game-item all">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/frogdetective3.jpg"
+                    ><img src="images/new_games/frogdetective3.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Frog Detective 3</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a>Casual</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    In the exciting series finale, The Detective and Lobster Cop
+                    are tasked to solve the conundrum of a sheriff-less county.
+                    But not all is as it seems here, when a surprisingly simple
+                    solution...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 25 December 2023</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item12 -->
+            <div class="game-item all popular">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/whos.jpg"
+                    ><img src="images/new_games/whos.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">The Last Worker</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Indie</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    The Last Worker is a first-person narrative adventure
+                    centered around our struggle in an increasingly automated
+                    world. Combining a hand-crafted art style with uniquely
+                    immersive...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Release on: 26 March 2024</p>
+                  <button class="button">Pre-Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- join us section -->
+    <section class="join new-join">
+      <h2>Looking for More Upcoming games?</h2>
+      <p class="space">Sign in to subscribe for the upcoming games</p>
+      <a href="#" class="button">Sign In</a>
+      <p class="space-top">
+        or <a href="#" class="link">Sign Up</a> and join us for free
+      </p>
+    </section>
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col footer-logo">
+          <div class="footer-logo-img">
+            <a href="index.html"
+              ><img src="images/logo/footer_logo.png" alt="logo"
+            /></a>
+          </div>
+
+          <p>
+            An online game store aims to make it wasy for gamers. Is always up
+            to date in the world of gaming.
+          </p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col footer-nav">
+          <div class="footer-navbar">
+            <h4>Company</h4>
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Work With Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Game Categories</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Role-Playing</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Sports & Racing</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Help & Support</h4>
+            <nav>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022, Gamezone. All rights reserved</p>
+        <div class="policy">
+          <p><a href="#">Term of us</a></p>
+          <p><a href="#">Privacy policy</a></p>
+          <p><a href="#">Cookie policy</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
