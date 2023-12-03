@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamezone</title>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FA-BRANDS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+      <!-- navigation bar -->  
+      <nav class="navbar">
+        <div class="content">
+          <!-- logo -->  
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo/logo.png" alt="logo"/></a>
+          </div>
+
+          <!-- menu list -->
+          <ul class="menu-list">
+            <!-- close icon for mobile view -->
+            <div class="icon cancel-btn">
+              <i class="fa fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new.html">New & Noteworthy</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="#" class="sign">Sign In</a></li>
+          </ul>
+          <!-- burger menu btn for mobile view -->
+          <div class="icon menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main content section -->
+    <main>
+      <!-- game banner section -->  
+      <section class="game-banner">
+        <div class="new-container">
+          <h1>Genshin Imapct</h1>
+          <p class="new-text">
+            Set forth on a journey across a fantasy world called Teyvat. In this
+            vast world, explore seven nations, meet a diverse cast of characters
+            with unique personalities and abilities and fight powerful enemies
+            together with them, all on the way during your quest to find your
+            lost sibling.
+          </p>
+          <p class="new-text">Update on: 30 November, 2023</p>
+          <a href="#">Find out more</a>
+        </div>
+      </section>
+
+      <!-- new page banner slide section -->
+      <section class="new-banner-slide">
+
+        <!-- Swiper with Bullet Pagination -->
+        <div class="swiper-container" id="swiperWithBullet">
+            <div class="swiper-wrapper">
+                <!-- game slide 1 -->
+                <div class="swiper-slide">
+                    <!-- swpier image  -->
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <a href="images/banner/new_banner1.jpg">
+                                <img src="images/banner/new_banner1.jpg" alt="game" class="card-img"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <!-- game slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner2.jpg">
+                                    <img src="images/banner/new_banner2.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- game slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner3.jpg">
+                                    <img src="images/banner/new_banner3.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- game slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/banner/new_banner4.jpg">
+                                    <img src="images/banner/new_banner4.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination bullets -->
+                <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- filter section -->
+      <section class="filter-menu">
+        <div class="fmenu-container">
+          <!-- filter buttons -->
+          <div class="fmenu-btns">
+            <button type="button" class="fmenu-btn active-btn" id="all">
+              All
+            </button>
+            <button type="button" class="fmenu-btn" id="new">New</button>
+            <button type="button" class="fmenu-btn" id="top">Top Seller</button>
+
+            <button type="button" class="fmenu-btn" id="rated">
+              Top Rated
+            </button>
+
+            <button type="button" class="fmenu-btn" id="g-free">
+              Free to play
+            </button>
+          </div>
+
+          <!-- display all games -->
+          <div class="game-items">
+            <!-- item1 -->
+            <div class="game-item all new rated">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/F1.jpg"
+                    ><img
+                      src="images/all_games/F1.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">F1® Manager 2022</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Simulation</a></p>
+                    <div class="system">
+                      <img src="images/system/apple.png" alt="apple" />
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Make your mark on Formula 1® in the officially licensed F1®
+                    Manager 2022. Be the boss of your chosen constructor and
+                    pick from a roster of 2022 drivers and staff. Make your mark
+                    on Formula...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$55.80</p>
+                  <button class="button">Add to Card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item2 -->
+            <div class="game-item all top rated">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/cultlamb.jpg"
+                    ><img
+                      src="images/all_games/cultlamb.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Cult of the Lamb</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#"></a>Action</p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Start your own cult in a land of false prophets, venturing
+                    out into diverse and mysterious regions to build a loyal
+                    community of woodland Followers and spread your Word to
+                    become the one true cult.
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$32.00</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item3 -->
+            <div class="game-item all new g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/ageofempires.jpg"
+                    ><img
+                      src="images/all_games/ageofempires.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Age of Empires IV</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Strategy</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    One of the most beloved real-time strategy games returns to
+                    glory with Age of Empires IV, putting you at the center of
+                    epic historical battles that shaped the world.One of the
+                    most beloved...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item4 -->
+            <div class="game-item all top g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/eldenring.jpg"
+                    ><img
+                      src="images/all_games/eldenring.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">ELDEN RING</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#"></a>Action</p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided
+                    by grace to brandish the power of the Elden Ring and become
+                    an Elden Lord in the Lands Between. THE NEW FANTASY ACTION
+                    RPG. Rise...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item5 -->
+            <div class="game-item all new">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/stray.jpg"
+                    ><img
+                      src="images/all_games/stray.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Stray</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#"></a>Indie</p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Lost, alone and separated from family, a stray cat must
+                    untangle an ancient mystery to escape a long-forgotten
+                    cybercity and find their way home. Lost, alone and separated
+                    from...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$28.50</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item6 -->
+            <div class="game-item all top rated g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/plateup.jpg"
+                    ><img
+                      src="images/all_games/plateup.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">PlateUp!</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Cook and serve your dishes, design and decorate your
+                    restaurants, and expand your culinary kingdom with new
+                    unlocks, abilities and dishes in procedurally-generated
+                    locations.
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item7 -->
+            <div class="game-item all new rated">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/across.jpg"
+                    ><img
+                      src="images/all_games/across.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Across the Obelisk</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Adventure</a></p>
+                    <div class="system">
+                      <img src="images/system/apple.png" alt="apple" />
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Across the Obelisk is a coop RPG deckbuilding roguelite.
+                    Play solo or with your friends, choose your heroes, unlock
+                    items and cards, craft your deck and face powerful enemies
+                    in deep tactical...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$24.00</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item8 -->
+            <div class="game-item all top g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/theforest.jpg"
+                    ><img
+                      src="images/all_games/theforest.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">The Forest</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    As the lone survivor of a passenger jet crash, you find
+                    yourself in a mysterious forest battling to stay alive
+                    against a society of cannibalistic mutants. Build, explore,
+                    survive in this...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item9 -->
+            <div class="game-item all new rated">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/fishinggame.jpg"
+                    ><img src="images/new_games/fishinggame.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">Fishing Game</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a>Casual</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                      <img src="images/system/linux.png" alt="linux" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Fishing game is an itty bitty game inspired by the fishing
+                    minigame in Stardew Valley. Filled with a bunch of goofy
+                    writing and a handful of spicy gimmicks. Collect over twenty
+                    unique...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$28.50</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item10 -->
+            <div class="game-item all top g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/misc.jpg"
+                    ><img src="images/new_games/misc.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">Misc. A Tiny Tale</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Indie</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    Join Buddy and Bag Boy, two adorable robots made of
+                    miscellaneous items, on a heartfelt 3D platforming
+                    adventure. Explore a familiar world from a new perspective,
+                    lend...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item11 -->
+            <div class="game-item all new top rated">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/all_games/gtfo.jpg"
+                    ><img
+                      src="images/all_games/gtfo.jpg"
+                      alt="game"
+                      class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left"><a href="#">GTFO</a></h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Action</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    GTFO is an extreme cooperative horror shooter that throws
+                    you from gripping suspense to explosive action in a
+                    heartbeat. Stealth, strategy, and teamwork are necessary to
+                    survive in your...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>$41.70</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+
+            <!-- item12 -->
+            <div class="game-item all rated g-free">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <a href="images/new_games/whos.jpg"
+                    ><img src="images/new_games/whos.jpg" alt="game" class="card-img"
+                  /></a>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="name align-left">
+                  <a href="#">The Last Worker</a>
+                </h2>
+
+                <div class="description">
+                  <div class="categories">
+                    <p><a href="#">Indie</a></p>
+                    <div class="system">
+                      <img src="images/system/windows.png" alt="windows" />
+                    </div>
+                  </div>
+
+                  <p>
+                    The Last Worker is a first-person narrative adventure
+                    centered around our struggle in an increasingly automated
+                    world. Combining a hand-crafted art style with uniquely
+                    immersive...
+                  </p>
+                </div>
+                <div class="price">
+                  <p>Free</p>
+                  <button class="button">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </section>
+
+      <!-- join us section -->
+      <section class="join game-join">
+        <h2>View purchased games?</h2>
+        <p class="space">Sign in to view for the games you already purchased</p>
+        <a href="#" class="button">Sign In</a>
+        <p class="space-top">
+          or <a href="#" class="link">Sign Up</a> and join us for free
+        </p>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <!-- footer row and col -->
+      <div class="footer-row">
+        <div class="footer-col footer-logo">
+          <!-- footer logo png -->  
+          <div class="footer-logo-img">
+            <a href="index.html"
+              ><img src="images/logo/footer_logo.png" alt="logo"
+            /></a>
+          </div>
+
+          <!-- Description -->
+          <p>
+            An online game store aims to make it wasy for gamers. Is always up
+            to date in the world of gaming.
+          </p>
+
+          <!-- social media icons -->
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- footer navigation col -->
+        <div class="footer-col footer-nav">
+          <div class="footer-navbar">
+            <h4>Company</h4>
+            <nav>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Work With Us</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Game Categories</h4>
+            <nav>
+              <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Role-Playing</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Sports & Racing</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-navbar">
+            <h4>Help & Support</h4>
+            <nav>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022, Gamezone. All rights reserved</p>
+        <div class="policy">
+          <p><a href="#">Term of us</a></p>
+          <p><a href="#">Privacy policy</a></p>
+          <p><a href="#">Cookie policy</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
