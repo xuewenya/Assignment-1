@@ -515,6 +515,10 @@ p {
     padding: 0 10px;
 }
 
+.space {
+    margin-top: 10px;
+}
+
 .upcoming p {
     font-size: 14px;
 }
