@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 /* apply styles to all images */  
 img {
     width: 100%;
@@ -409,7 +415,7 @@ p {
     border-bottom: 2px solid #e77166;
     padding: 2px 5px;
     font-weight: 600;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .more a:hover{
@@ -418,7 +424,7 @@ p {
 }
 
 .offer-slider {
-    padding-top: 20px 0 40px 0;
+    padding: 20px 0 40px 0;
 }
 
 /* index page free games section */
@@ -542,7 +548,7 @@ p {
 .join .link {
     text-decoration: none;
     color: #e77166;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .join .link:hover{
