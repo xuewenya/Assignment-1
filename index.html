@@ -6,8 +6,9 @@
     <title>Gamezone</title>
 
     <!-- Css link -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!-- FA-BRANDS -->
     <link
       rel="stylesheet"
@@ -28,6 +29,7 @@
 </head>
 <body>
     <header>
+      <!-- navigation var section -->  
       <nav class="navbar">
         <div class="content">
           <div class="logo">
@@ -53,244 +55,228 @@
     </header>
 
     <main>
-      <!-- banner -->
-      <section class="banner">
-        <div class="banner-title">
-          <h1>What you would like to play?</h1>
-          <p>An online game store aims to make it easy for gamers.</p>
-          <p>Is always up to date in the world of gaming.</p>
-        </div>
-        <div class="search">
-          <form
-            action="https://www.google.com/search"
-            method="get"
-            class="search-bar"
-          >
-            <input
-              type="text"
-              name="search"
-              placeholder="Search your game"
-            /><button class="search-btn" type="submit">Search</button>
-          </form>
-        </div>
-
-        <!-- banner slider -->
-        <div class="slider">
-          <div class="slide-container swiper">
-            <div class="slide-content">
-              <div class="card-wrapper swiper-wrapper">
-                <!--slider1-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/top/1.jpg"
-                        ><img
-                          src="images/top_saler/farthest.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Farthest Frontier</a></h2>
-                    <div class="description">
-                      <div class="categories">
-                        <p><a href="#">Action</a></p>
-                        <div class="system">
-                          <img src="images/system/windows.png" alt="windows" />
-                        </div>
-                      </div>
-
-                      <p>
-                        Protect and guide your people as you forge a town from
-                        untamed wilderness at the edge of the known world.
-                        Harvest raw materials, hunt, fish and farm to survive.
-                        Produce...
-                      </p>
-                    </div>
-                    <div class="price">
-                      <p>$26.00</p>
-                      <button class="button">Pre-Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!--slider2-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/top/2.jpg"
-                        ><img
-                          src="images/top_saler/soulhackers2.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Soul Hackers 2</a></h2>
-
-                    <div class="description">
-                      <div class="categories">
-                        <p><a href="#">RPG</a></p>
-                        <div class="system">
-                          <img src="images/system/windows.png" alt="windows" />
-                          <img src="images/system/linux.png" alt="linux" />
-                        </div>
-                      </div>
-
-                      <p>
-                        Explore a supernatural RPG with stylish summoners and
-                        dark dangers lurking under the neon lights of a
-                        cyberpunk Japan. It is up to Ringo, an agent of Aion, to
-                        save...
-                      </p>
-                    </div>
-                    <div class="price">
-                      <p>$79.90</p>
-                      <button class="button">Pre-Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!--slider3-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/top/3.jpg"
-                        ><img
-                          src="images/top_saler/cultofthelamb.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Cult of the lamb</a></h2>
-
-                    <div class="description">
-                      <div class="categories">
-                        <p><a href="#">Action</a></p>
-                        <div class="system">
-                          <img src="images/system/apple.png" alt="apple" />
-                          <img src="images/system/windows.png" alt="windows" />
-                        </div>
-                      </div>
-
-                      <p>
-                        Start your own cult in a land of false prophets,
-                        venturing out into diverse and mysterious regions to
-                        build a loyal community of woodland Followers and spread
-                        your...
-                      </p>
-                    </div>
-                    <div class="price">
-                      <p>$26.00</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-                <!--slider4-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/top/4.jpg"
-                        ><img
-                          src="images/top_saler/regiments.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Regiments</a>R</h2>
-
-                    <div class="description">
-                      <div class="categories">
-                        <p><a href="#">Indie</a></p>
-                        <div class="system">
-                          <img src="images/system/windows.png" alt="windows" />
-                          <img src="images/system/linux.png" alt="linux" />
-                        </div>
-                      </div>
-
-                      <p>
-                        Regiments is a Real-Time Tactics game set in Germany
-                        1989. The Cold War has gone hot, and the inferno is
-                        raging. Lead your Regiment through the fires of conflict
-                        and...
-                      </p>
-                    </div>
-                    <div class="price">
-                      <p>$26.00</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-                <!--slider5-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/top/5.jpg"
-                        ><img
-                          src="images/top_saler/plateup.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">PlateUp!</a></h2>
-
-                    <div class="description">
-                      <div class="categories">
-                        <p><a href="#">Action</a></p>
-                        <div class="system">
-                          <img src="images/system/apple.png" alt="apple" />
-                          <img src="images/system/windows.png" alt="windows" />
-                        </div>
-                      </div>
-
-                      <p>
-                        Cook and serve your dishes, design and decorate your
-                        restaurants, and expand your culinary kingdom with new
-                        unlocks, abilities and dishes in procedurally-generated
-                        locations.
-                      </p>
-                    </div>
-                    <div class="price">
-                      <p>$17.00</p>
-                      <button class="button">Pre-Order Now</button>
-                    </div>
-                  </div>
-                </div>
+        <!-- index page banner -->
+        <section class="banner">
+            <div class="banner-title">
+                <h1>What you would like to play?</h1>
+                <p>An online game store aims to make it easy for gamers.</p>
+                <p>Is always up to date in the world of gaming.</p>
               </div>
+              <!-- search bar form -->
+              <div class="search">
+                <form
+                  action="https://www.google.com/search"
+                  method="get"
+                  class="search-bar"
+                >
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search your game"
+                  /><button class="search-btn" type="submit">Search</button>
+                </form>
+              </div>
+
+            <!-- Swiper with Bullet Pagination -->
+            <div class="swiper-container" id="swiperWithBullet">
+                <div class="swiper-wrapper">
+                    <!-- slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <a href="images/top_saler/farthest.jpg">
+                                        <img src="images/top_saler/farthest.jpg" alt="game" class="card-img"/>
+                                    </a>
+                                </div>
+                        </div>
+
+                        <!-- game details-->
+                        <div class="card-content">
+                            <h2 class="name"><a href="#">Farthest Frontier</a></h2>
+                            <div class="description">
+                                <!-- Categories, system, and description -->
+                                <div class="categories">
+                                    <p><a href="#">Action</a></p>
+                                    <div class="system">
+                                        <img src="images/system/windows.png" alt="windows" />
+                                    </div>
+                                </div>
+
+                                    <p>
+                                        Protect and guide your people as you forge a town from
+                                        untamed wilderness at the edge of the known world.
+                                        Harvest raw materials, hunt, fish and farm to survive.
+                                        Produce...
+                                    </p>
+                            </div>
+                            <!-- Game price and add to cart button -->
+                            <div class="price">
+                                <p>$26.00</p>
+                                <button class="button">Add to Card</button>
+                            </div>       
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/top_saler/soulhackers2.jpg">
+                                    <img src="images/top_saler/soulhackers2.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="card-content">
+                            <h2 class="name"><a href="#">Soul Hackers 2</a></h2>
+                            <div class="description">
+                                <div class="categories">
+                                    <p><a href="#">RPG</a></p>
+                                    <div class="system">
+                                        <img src="images/system/windows.png" alt="windows" />
+                                        <img src="images/system/linux.png" alt="linux" />
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Explore a supernatural RPG with stylish summoners and
+                                    dark dangers lurking under the neon lights of a
+                                    cyberpunk Japan. It is up to Ringo, an agent of Aion, to
+                                    save...
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>$79.90</p>
+                                <button class="button">Add to card</button>
+                            </div>     
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/top_saler/cultofthelamb.jpg">
+                                    <img src="images/top_saler/cultofthelamb.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="card-content">
+                            <h2 class="name"><a href="#">Cult of the lamb</a></h2>
+                            <div class="description">
+                                <div class="categories">
+                                    <p><a href="#">Action</a></p>
+                                    <div class="system">
+                                        <img src="images/system/apple.png" alt="apple" />
+                                        <img src="images/system/windows.png" alt="windows" />
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Start your own cult in a land of false prophets,
+                                    venturing out into diverse and mysterious regions to
+                                    build a loyal community of woodland Followers and spread
+                                    your...
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>$26.00</p>
+                                <button class="button">Add to Card</button>
+                            </div>     
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/top_saler/regiments.jpg">
+                                    <img src="images/top_saler/regiments.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="card-content">
+                            <h2 class="name"><a href="#">Regiments</a></h2>
+                            <div class="description">
+                                <div class="categories">
+                                    <p><a href="#">Indie</a></p>
+                                    <div class="system">
+                                        <img src="images/system/windows.png" alt="windows" />
+                                        <img src="images/system/linux.png" alt="linux" />
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Regiments is a Real-Time Tactics game set in Germany
+                                    1989. The Cold War has gone hot, and the inferno is
+                                    raging. Lead your Regiment through the fires of conflict
+                                    and...
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>$26.00</p>
+                                <button class="button">Add to Card</button>
+                            </div>     
+                        </div>
+                    </div>
+                    <!-- slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <a href="images/top_saler/plateup.jpg">
+                                    <img src="images/top_saler/plateup.jpg" alt="game" class="card-img"/>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="card-content">
+                            <h2 class="name"><a href="#">PlateUp!</a></h2>
+                            <div class="description">
+                                <div class="categories">
+                                    <p><a href="#">Action</a></p>
+                                    <div class="system">
+                                        <img src="images/system/apple.png" alt="apple" />
+                                        <img src="images/system/windows.png" alt="windows" />
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Cook and serve your dishes, design and decorate your
+                                    restaurants, and expand your culinary kingdom with new
+                                    unlocks, abilities and dishes in procedurally-generated
+                                    locations.
+                                </p>
+                            </div>
+                            <div class="price">
+                                <p>$17.00</p>
+                                <button class="button">Add to Card</button>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination button -->
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- offer section -->
+        </section>
+
+
+        <!-- offer section -->
       <section class="offer">
         <div class="offer-title">
           <h2>Special Offer</h2>
           <p>Browse discounted products for this month!</p>
         </div>
 
-        <!--countdown-->
+        <!-- countdown timer: days, hours, minutes and seconds-->
         <div class="countdown-timer">
           <div class="timer-item">
             <div class="days">
@@ -318,145 +304,143 @@
           </div>
         </div>
 
-        <!-- offer slider -->
-        <div class="offer-slider">
-          <div class="slide-container swiper">
-            <div class="slide-content">
-              <div class="card-wrapper swiper-wrapper">
-                <!--card1-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
+        <!-- offer swiper with Navigation Buttons -->
+        <div class="swiper-container" id="swiperWithButtons">
+            <div class="swiper-wrapper card-wrapper">
+            <!-- card 1 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
 
-                    <div class="card-image">
-                      <a href="images/offer/rosewater.jpg"
-                        ><img
-                          src="images/offer/rosewater.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
+                  <div class="card-image">
+                    <a href="images/offer/rosewater.jpg" >
+                        <img src="images/offer/rosewater.jpg" alt="game" class="card-img" />
+                    </a>
                   </div>
+                </div>
 
-                  <div class="card-content">
+                <div class="card-content">
                     <h2 class="name">
-                      <a href="#">Rosewater</a>
+                        <a href="#">Rosewater</a>
                     </h2>
 
                     <div class="price">
-                      <p class="offer-p"><a>$79.00</a> $34.00</p>
-                      <button class="button">Add to Card</button>
+                        <p class="offer-p"><a>$79.00</a> $34.00</p>
+                        <button class="button">Add to Card</button>
                     </div>
-                  </div>
                 </div>
-                <!-- offer card 2 -->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/offer/theawakened.jpg"
-                        ><img
-                          src="images/offer/theawakened.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Sherlock Holmes</a></h2>
-
-                    <div class="price">
-                      <p class="offer-p"><a>$59.90</a> $29.90</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-
-                <!--card3-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/offer/crimes.jpg"
-                        ><img
-                          src="images/offer/crimes.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name"><a href="#">Crimes and Punishments</a></h2>
-
-                    <div class="price">
-                      <p class="offer-p"><a>$39.90</a> $7.90</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-                <!--card4-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/offer/deadisland.jpg"
-                        ><img
-                          src="images/offer/deadisland.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name">
-                      <a href="#">Dead Island Definitive Edition</a>
-                    </h2>
-
-                    <div class="price">
-                      <p class="offer-p"><a>$20.00</a> $4.00</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-                <!--card5-->
-                <div class="card swiper-slide">
-                  <div class="image-content">
-                    <span class="overlay"></span>
-
-                    <div class="card-image">
-                      <a href="images/offer/warhammer.jpg"
-                        ><img
-                          src="images/offer/warhammer.jpg"
-                          alt="game"
-                          class="card-img"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <div class="card-content">
-                    <h2 class="name">
-                      <a href="#">Total War: WARHAMMER III</a>
-                    </h2>
-
-                    <div class="price">
-                      <p class="offer-p"><a>$69.00</a> $62.10</p>
-                      <button class="button">Add to Card</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-navBtn swiper-button-next"></div>
-              <div class="swiper-navBtn swiper-button-prev"></div>
             </div>
-          </div>
+            <!-- card 2-->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <a href="images/offer/theawakened.jpg"
+                      ><img
+                        src="images/offer/theawakened.jpg"
+                        alt="game"
+                        class="card-img"
+                      /></a>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">
+                        <a href="#">Sherlock Holmes</a>
+                    </h2>
+
+                    <div class="price">
+                        <p class="offer-p"><a>$59.50</a> $29.90</p>
+                        <button class="button">Add to Card</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3-->
+            <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <a href="images/offer/crimes.jpg"
+                  ><img
+                    src="images/offer/crimes.jpg"
+                    alt="game"
+                    class="card-img"
+                /></a>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">
+                <a href="#">Crimes and Punishments</a>
+              </h2>
+
+              <div class="price">
+                <p class="offer-p"><a>$39.90</a> $7.90</p>
+                <button class="button">Add to Card</button>
+              </div>
+            </div>
+        </div>
+        <!-- card 4-->
+        <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <a href="images/offer/deadisland.jpg"
+                  ><img
+                    src="images/offer/deadisland.jpg"
+                    alt="game"
+                    class="card-img"
+                /></a>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">
+                <a href="#">Dead Island Definitive Edition</a>
+              </h2>
+
+              <div class="price">
+                <p class="offer-p"><a>$20.00</a> $4.00</p>
+                <button class="button">Add to Card</button>
+              </div>
+            </div>
+        </div>
+        <!-- card 5-->
+        <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <a href="images/offer/warhammer.jpg"
+                  ><img
+                    src="images/offer/warhammer.jpg"
+                    alt="game"
+                    class="card-img"
+                /></a>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">
+                <a href="#">Total War: WARHAMMER III</a>
+              </h2>
+
+              <div class="price">
+                <p class="offer-p"><a>$69.00</a> $59.90</p>
+                <button class="button">Add to Card</button>
+              </div>
+            </div>
+        </div>
+      <!-- Add more slides as needed -->
+            </div>
+            <button class="swiper-button-prev">Prev</button>
+            <button class="swiper-button-next">Next</button>
         </div>
 
+        <!-- more offer link -->
         <div class="more">
           <a href="#">More Offer</a>
         </div>
@@ -671,16 +655,18 @@
       <section class="join">
         <h2>Looking for Recommendation?</h2>
         <p class="space">Sign in to view personalized recommendation</p>
-        <a href="#" class="action-btn">Sign In</a>
+        <a href="#" class="button">Sign In</a>
         <p class="space-top">
           or <a href="#" class="link">Sign Up</a> and join us for free
         </p>
       </section>
     </main>
+
+    <!-- footer section -->
     <footer>
       <div class="footer-row">
         <div class="footer-col footer-logo">
-          <div class="footer-l">
+          <div class="footer-logo-img">
             <a href="index.html"
               ><img src="images/logo/footer_logo.png" alt="logo"
             /></a>
@@ -745,8 +731,7 @@
         </div>
       </div>
     </footer>
-    <!-- Swiper JS -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- JS -->
     <script src="js/script.js"></script>
   </body>
 </html>
